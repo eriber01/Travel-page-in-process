@@ -1,0 +1,423 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* @keyframes rotar{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+.text-down{
+    animation: rotar 10s linear infinite;
+}
+ */
+
+:root{
+    --main-font: 'Do Hyeon', sans-serif;
+}
+
+/* diseno nav start */
+.navegation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 13px 0px 13px 0px;
+    z-index: 10;
+}
+
+.navegation ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    list-style: none;
+}
+.nav-list{
+    text-align: center;
+    width: 22%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    /* background-color: rgb(0, 0, 0); */
+    margin: 0px 30px 0px 30px;
+    border-radius: 5px;
+    transition: all 350ms ease;
+    overflow: hidden;
+}
+
+.nav-list:hover{
+   /*  background-color: white; */
+    color:black;
+}
+
+
+.home-page{
+    height: calc(100vh - 10px);
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-home{
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    width: 15%;
+    padding: 10px 0px 10px 0px;
+    color: black;
+    font-size: 20px;
+    transition: all 350ms ease;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.btn-home:hover{
+    transform: scale(1.05);
+}
+
+/*diseno text center*/
+.text-center{
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    font-family: 'Galada', cursive;
+    font-size: 3rem;
+    text-shadow: 10px 10px 10px black; */
+
+    display: block;
+}
+
+
+/* diseno nav end */
+
+/* diseno video center home inicio*/
+
+.video-container{
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.video-container video{
+    background-position: center;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+/* diseno video center home fin*/
+
+/* diseno home text home inicio*/
+
+.home-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    color: white;
+    font-family: 'Galada', cursive;
+    font-size: 3rem;
+    text-shadow: 10px 10px 10px black;
+}
+
+/* diseno home text home fin*/
+
+/*diseno Best Destiny inicio*/
+
+.best-destiny{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    background-color: #bbe1fa;
+}
+
+.title-best{
+    width: 60%;
+    background-color: #3282b8;
+    font-size: 2rem;
+    margin: 50px 0px 30px 0px;
+    color: rgb(255, 255, 255);
+    padding: 20px 0px 20px 0px;
+    font-family: 'Galada', cursive;
+    border-radius: 5px;
+    text-shadow: black 10px 1px 10px;
+    box-shadow: #7d618d 3px 3px 30px;
+
+}
+
+.container-best{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.text-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.text-up{
+    background-color: #1b262c;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 0% 2%;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 32px;
+
+    box-shadow: rgba(0, 0, 0, 0.533) 3px 3px 30px;
+}
+
+
+.text-down{
+    
+    background-color: #0f4c75;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 2% 0px 0px;
+    border-radius: 50%;
+    
+    color: #ffffff;
+    font-size: 32px;
+    box-shadow: rgba(0, 0, 0, 0.533) 3px 3px 30px;
+}
+
+/* 
+.text-up:hover, .text-down:hover{
+    color: rgb(0, 0, 0);
+    transform: rotateY(360deg);
+    transition: all 2s ease;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+} */
+
+/* efecto para rotar el div derecha */
+.rotateRight{
+    color: rgb(0, 0, 0);
+    transform: rotateY(360deg);
+    transition: all 2s ease;
+    background-color: white;
+    cursor: pointer;
+}
+
+.photo-up{
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/photo-up.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0px 0px, 100% 0px, 100% 84%, 0 100%);
+    background-repeat: no-repeat;
+}
+
+/* efecto para rotar el div izquierda */
+.rotateLeft{
+    color: rgb(255, 255, 255);
+    transform: rotateY(-360deg);
+    transition: all 2s ease;
+    background-color: #1b262c;
+    cursor: pointer;
+}
+
+.photo-down{
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/photo-down.jpg);
+    background-size: cover;
+    background-position: center;
+
+    clip-path: polygon(0px 0px, 100% 30%, 100% 100%, 0 100%);
+}
+/*diseno Best Destiny fin*/
+
+.offert{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #8ae7ee8c; */
+    background-color: #96e0e6; 
+}
+
+.card-container{
+    height: 100%;
+    width: 100%;
+}
+
+/*desing offert one and desing offert two*/
+
+.offert-1, .offert-2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.offert-1{
+   /*  margin-top: 30px; */
+    background-color: white;
+    height: 95vh;
+    clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 85%);
+}
+
+.offert-1 .card, .offert-2 .card{
+    height: 400px;
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.offert-1 .card img, .offert-2 .card img{
+   /*  opacity: 0.85; */
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.text-Card{
+    width: 70%;
+    padding-top: 1rem;
+    margin: auto;
+}
+
+/*desing offert video*/
+.video-offert{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.video-offert .card{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-offert .card video{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*desing offert two*/
+
+.offert-2{
+    background-color: white;
+    height: 95vh;
+    clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0 100%);
+}
+
+
+
+/* desing about-us*/
+
+.about-us{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+    background-color: #96e0e6;
+}
+
+.about-info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-us h2{
+    font: 2em sans-serif;
+}
+
+.info-card-mission, .info-card-values, .info-card-about{
+    width: 25%;
+}
+
+h4{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+
+/* desing footer*/
+
+.footer{
+
+    height: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: #0aa4b3;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    line-height: 22px;
+}
+.red-social{
+    width: 50%;
+    text-align: center;
+    
+}
+
+.social-ico{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.red-social p{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+.working-hours{
+    line-height: 30px;
+}
