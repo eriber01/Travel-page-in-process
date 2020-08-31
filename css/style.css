@@ -295,14 +295,15 @@
 }
 
 .offert-1 .card, .offert-2 .card{
-    height: 400px;
+    height: 65%;
     width: 30%;
     background-color: white;
     border-radius: 5px;
     box-shadow: 1px 1px 10px black;
 }
 
-.offert-1 .card img, .offert-2 .card img{
+
+/* .offert-1 .card img, .offert-2 .card img */ .img-offert{
    /*  opacity: 0.85; */
     width: 100%;
     border-radius: 5px 5px 0px 0px;
@@ -343,6 +344,31 @@
     clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0 100%);
 }
 
+/*diseno agregar al carrito inicio*/
+
+.agregar-Carrito{
+    position: absolute;
+    height: 43%;
+    width: 30%;
+    line-height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.342);
+    transform: translateY(130%);
+}
+
+.card:hover ~ .agregar-Carrito{
+    transform: translateY(-100%);
+    transition: all 500ms ease;
+}
+.ico-agregar{
+    cursor: pointer;
+}
+
+/*diseno agregar al carrito fin*/
 
 
 /* desing about-us*/
@@ -395,15 +421,17 @@ h4{
     align-items: center;
     color: white;
     background-color: #0aa4b3;
+    background-color: #07436b;
 }
 
 .contact{
     display: flex;
     flex-direction: column;
-    line-height: 22px;
+    line-height: 28px;
 }
 .red-social{
     width: 50%;
+    height: 50%;
     text-align: center;
     
 }
