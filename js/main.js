@@ -1,3 +1,12 @@
+//reinicia la pagina al hacer click en el boton de HOME
+
+const btnRestart = document.getElementById('restart').addEventListener('click', (eve)=>{
+    setTimeout(()=>{
+        location.reload()
+    },1000)
+})
+
+
 /* texto remplazo primer div */
 let text_up = 'Los Mejores destinos las Mejores Aventuras';
 

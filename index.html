@@ -13,15 +13,15 @@
     <title>Travel Page</title>
 </head>
 <body>
-    <section class="home-page">
+    <section class="home-page" id="home">
 
         <nav class="navegation">
-            <a href="#" class="btn-home">HOME</a>
+            <a href="#home" id="restart" class="btn-home">HOME</a>
             <ul>
                 <li>
-                    <a href="#" class="nav-list">Offers</a>
-                    <a href="#" class="nav-list">About Us</a>
-                    <a href="#" class="nav-list">Contact</a>
+                    <a href="#offers" class="nav-list">Offers</a>
+                    <a href="#us" class="nav-list">About Us</a>
+                    <a href="#contact" class="nav-list">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -61,7 +61,7 @@
         </div>
     </section>
 
-    <section class="offert" >
+    <section class="offert" id="offers">
         <div class="title-best">
             <h2>Nuestras Mejores Ofertas</h2>
         </div>
@@ -125,7 +125,7 @@
         </div>
     </section>
 
-    <section class="about-us" >
+    <section style="height: 100vh;" class="about-us" id="us">
         <h2 style="text-align: center;">About Us</h2>
         <div class="about-info">
             <div class="info-card-mission">
@@ -149,63 +149,82 @@
                 </p>
             </div>
         </div>
-        <span><strong>Comprometidos con brindar el Mejor viaje del Mundo</strong></span>
+        
     </section>
 
-        <footer class="footer">
-            <div class="contact">
-                <h4>Contacts</h4>
-                <span>Cel. 809-433-9691</span>
-                <span>eriber01@gmail.com</span>
-                <span>Tel. 809-414-9228</span>
-            </div>
-
-            <div class="red-social">
-                <h4>Red Social</h4>
-                <br>
-                <div class="social-ico">
-                    <div class="facebook">
-                    
-                        <a target="_blank" href="https://www.facebook.com/eriber.tejedaamparo">
-                            <img src="img/ico/facebook.png" alt="">
-                        </a>
-                    </div>
-
-                    <div class="instagram">
-                        
-                        <a target="_blank" href="https://www.instagram.com/eribertejeda/">
-                            <img src="img/ico/instagram.png" alt="">
-                        </a>
-                    </div>
-
-                    <div class="git">
+    <section class="contactanos">
+        
+        <div class="contactenos-container">
             
-                        <a target="_blank" href="https://github.com/eriber01">
-                            <img src="img/ico/git.png" alt="">
-                        </a>
-                    </div>
+            <form action="mailto:eriber01@gmail.com" method="post" enctype="text/plain" id="form" autocomplete="off">
+                <h2 style="text-align: center;">Contactenos</h2>
+                <input type="text" name="" id="nombre" placeholder="Nombre">
+                <input type="text" name="" id="apellido" placeholder="Apellido">
+                <input type="email" name="" id="email" placeholder="Email">
+                <textarea name="" id="mensaje" cols="10" rows="3" placeholder="Escriba su mensaje por favor"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
 
-                    <div class="linkedin">
+    </section>
+
+    <footer style="height: 80vh;" class="footer" id="contact">
+        <div class="contact">
+            <h4>Contacts</h4>
+            <span>Cel. 809-433-9691</span>
+            <span>eriber01@gmail.com</span>
+            <span>Tel. 809-414-9228</span>
+        </div>
+
+        <div class="red-social">
+            <h4>Red Social</h4>
+            <br>
+            <div class="social-ico">
+                <div class="facebook">
+                
+                    <a target="_blank" href="https://www.facebook.com/eriber.tejedaamparo">
+                        <img src="img/ico/facebook.png" alt="">
+                    </a>
+                </div>
+
+                <div class="instagram">
                     
-                        <a target="_blank" href="https://www.linkedin.com/in/eriber-tejeda-amparo-7a495614a/">
-                            <img src="img/ico/linkedin.png" alt="">
-                        </a>
-                    </div>
+                    <a target="_blank" href="https://www.instagram.com/eribertejeda/">
+                        <img src="img/ico/instagram.png" alt="">
+                    </a>
+                </div>
+
+                <div class="git">
+        
+                    <a target="_blank" href="https://github.com/eriber01">
+                        <img src="img/ico/git.png" alt="">
+                    </a>
+                </div>
+
+                <div class="linkedin">
+                
+                    <a target="_blank" href="https://www.linkedin.com/in/eriber-tejeda-amparo-7a495614a/">
+                        <img src="img/ico/linkedin.png" alt="">
+                    </a>
                 </div>
             </div>
+        </div>
 
-            <div class="working-hours">
-                <h4>Working Hours</h4>
-                
-                <span>Monday at Friday</span>
-                <span>8:00 Am at 5:00 Pm</span>
-                <hr>
-                <span>Saturday</span>
-                <span>9:00 Am at 12:00 Pm</span>
-            </div>
-        </footer>
+        <div class="working-hours">
+            <h4>Working Hours</h4>
+            
+            <span>Monday at Friday</span>
+            <span>8:00 Am at 5:00 Pm</span>
+            <hr>
+            <span>Saturday</span>
+            <span>9:00 Am at 12:00 Pm</span>
+        </div>
+    </footer>
+
 
     <script src="js/main.js"></script>
-
+    <script src="js/datosFirebase.js"></script>
+    <script src="js/form.js"></script>
+    
 </body>
 </html>
