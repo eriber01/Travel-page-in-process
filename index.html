@@ -156,13 +156,14 @@
         
         <div class="contactenos-container">
             
-            <form action="mailto:eriber01@gmail.com" method="post" enctype="text/plain" id="form" autocomplete="off">
+            <form id="form" autocomplete="off">
                 <h2 style="text-align: center;">Contactenos</h2>
-                <input type="text" name="" id="nombre" placeholder="Nombre">
-                <input type="text" name="" id="apellido" placeholder="Apellido">
-                <input type="email" name="" id="email" placeholder="Email">
-                <textarea name="" id="mensaje" cols="10" rows="3" placeholder="Escriba su mensaje por favor"></textarea>
-                <input type="submit" value="Enviar">
+                <input type="text" name="" id="nombre" placeholder="Nombre" required='required' minlength="3">
+                <input type="text" name="" id="apellido" placeholder="Apellido" required='required' minlength="3">
+                <input type="email" name="" id="email" placeholder="Email" required='required'>
+                <input type="text" name="" id="asusto" placeholder="asunto" required='required' minlength="3">
+                <textarea name="" id="mensaje" cols="10" rows="3" placeholder="Escriba su mensaje por favor" required='required'></textarea>
+                <input type="submit" value="Enviar" required='required'>
             </form>
         </div>
 
@@ -223,7 +224,7 @@
 
 
     <script src="js/main.js"></script>
-    <script src="js/datosFirebase.js"></script>
+    <script src="js/dataCorreo.js"></script>
     <script src="js/form.js"></script>
     
 </body>

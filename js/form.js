@@ -8,12 +8,16 @@ const mensaje = document.getElementById('mensaje')
 
 const formulario = document.getElementById('form')
 
-//evetos para el envio del mensaje
+//evetos para el tomar los datos del formulario
 
-formulario.addEventListener('submit', (eve)=>{
-    console.log()
+cargarEventos()
 
-    
-    datos.dataMensaje(nombre.value, apellido.value, email.value, mensaje.value)
+function cargarEventos(){
+    nombre.addEventListener('blur', validarCampo())
+}
 
-})
+/* funcion de la validacion de los campos */
+
+function validarCampo(){
+    console.log('campo nombre validado');
+}

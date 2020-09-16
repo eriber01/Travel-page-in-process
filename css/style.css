@@ -419,13 +419,16 @@ h4{
 /* diseno de la seccion de contactanos */
 .contactanos{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     text-align: center;
 }
 
 .contactanos h2{
     margin: 1.5rem;
+    font-size: 2rem;
+
     color: rgba(0, 0, 0, 0.685);
+    /* color: white; */
 }
 .contactenos-container{
     text-align: center;
@@ -435,8 +438,7 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    }
+}
 
 .contactenos-container form{
     display: flex;
@@ -444,13 +446,14 @@ h4{
     align-items: center;
     justify-content: center;
     width: 40%;
-   /*  height: 70%; */
+    height: 90%;
     /* background-color: rgb(195, 148, 255); */
     border: none;
     outline: none;
     border-radius: 5px;
-
     background-color: #00d0ffa4;
+
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.596);
 }
 
 input, textarea{
@@ -458,15 +461,19 @@ input, textarea{
     border: none;
     resize: none;
     width: 60%;
-    line-height: 40px;
     border-bottom: rgba(134, 134, 134, 0.637) solid 1px;
     color: rgb(70, 70, 70);
     font-size: 1rem;
     background-color: #00d0ff00;
 }
 
+input[type='text'], input[type='email']{
+    line-height: 4.5rem;
+}
 textarea{
+    margin-top: 1rem;
     font-size: 1.2rem;
+    line-height: 30px;
 }
 
 input::placeholder, textarea::placeholder{
@@ -475,18 +482,33 @@ input::placeholder, textarea::placeholder{
 }
 
 input[type='submit']{
-    margin-top: 1rem;
+    margin-top: 2.5rem;
     margin-bottom: 1rem;
     border: none;
-    width: 30%;
+    width: 20%;
+    height: 7%;
     background-color: #0d768da4;
     cursor: pointer;
     color: white;
 
     border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+input[type='submit']:hover{
+    transform: scale(1.05);
 }
 
 
+    /* efectos de la validacion de los datos del formulario */
+
+.valido{
+    border-bottom: 1px solid green;
+}
+
+.invalido{
+    border-bottom: 1px solid red;
+}
 /* desing footer*/
 
 .footer{
